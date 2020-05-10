@@ -5,13 +5,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
 Title "65C02 Hobby Computer"
-Date "2020-04-19"
+Date "2020-05-10"
 Rev "v002"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "https://github.com/dbuchwald/6502"
+Comment2 "https://github.com/tonylweil/6502"
 Comment3 "Based on Ben Eater's design"
-Comment4 "Author: Dawid Buchwald (v0002 updates by Tony Weil)"
+Comment4 "Author: Tony Weil (based on design by Dawid Buchwald)"
 $EndDescr
 Text GLabel 5500 2200 3    50   Input ~ 0
 +5V

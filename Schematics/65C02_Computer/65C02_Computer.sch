@@ -5,13 +5,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "65C02 Hobby Computer"
-Date "2020-04-19"
+Date "2020-05-10"
 Rev "v002"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "https://github.com/dbuchwald/6502"
+Comment2 "https://github.com/tonylweil/6502"
 Comment3 "Based on Ben Eater's design"
-Comment4 "Author: Dawid Buchwald (v0002 updates by Tony Weil)"
+Comment4 "Author: Tony Weil (based on design by Dawid Buchwald)"
 $EndDescr
 Text GLabel 1200 1000 1    50   Input ~ 0
 ~IRQ
@@ -2299,6 +2299,9 @@ Wire Wire Line
 	9950 4150 10400 4150
 Wire Wire Line
 	10400 3800 10400 3750
+Connection ~ 10400 3750
+Wire Wire Line
+	10400 3750 9950 3750
 Wire Bus Line
 	3100 5450 3100 5650
 Wire Bus Line
@@ -2327,7 +2330,4 @@ Wire Bus Line
 	1000 2000 1000 3250
 Wire Bus Line
 	5350 4250 5350 5750
-Connection ~ 10400 3750
-Wire Wire Line
-	10400 3750 9950 3750
 $EndSCHEMATC
