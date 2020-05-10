@@ -1,3 +1,43 @@
+# DB6502 v002 Tony Weil's Updates  - 5/10/2020
+
+KiCad Schematics, Board files and Gerbers in the Schematics/65C02_Computer directory have been updated to v002. In general, changes were made to add a sound chip and third VIA. Many jumpers were added allowing disconnecting and reconfiguring many signals. You can use jumpers to switch between LCD 4bit and 8bit wiring. See schematic for all changes.
+
+Changes include:
+
+Added VIA 3 6522
+
+Added 76489 sound chip,  to VIA2, 4Mhz oscillator and Audio Jack
+
+Added Port A and Port B female pin headers for all 3 VIAs
+
+Jumpers on LCD to switch between BE6502 8 bit and DB6502 4 bit, Moved LCD connector to center of board
+
+Jumpers for CPU: BE, SO, NMI, READY, Sync
+
+Jumpers for ROM: /OE, /CE and /WE lines
+
+Jumpers for RAM: /OE and /CE 
+
+Jumper to ground ACIA /CTS line and FT230x /CTS
+
+Jumpers added to disconnect any existing connections to VIA1 (LCD and ATTINY) and VIA2 (76489 Sound chip)
+
+Jumper to choose between 1MHz, 4MHz and external clock
+
+Jumpers to be able to use extra NOR gates
+
+FT230X /RES connected to VCCIO with jumper so it doesn't reset USB when computer is reset
+
+Moved Expansion header from center to edge of board
+
+Reorder FTDI header to match dongles, add jumper to disconnect 5v power, changed to horizontal pin header, move to board edge
+
+Changed USB Micro connector to USB Mini THT. Much easier to solder!
+
+Delete USB-B
+
+Added more mounting holes near VIAs and Expansion header to help with plugging in cables
+
 # DB6502 - Dawid Buchwald's 6502 Computer
 
 This repository contains all the work in progress during my build of Ben Eater's inspired 6502 8-bit computer similar to typical machines of the early 1980s. If you haven't seen Ben's videos, I would strongly suggest you start there:
