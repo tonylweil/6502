@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "65C02 Hobby Computer"
-Date "2020-05-10"
+Date "2020-05-12"
 Rev "v002"
 Comp ""
 Comment1 "https://github.com/dbuchwald/6502"
@@ -1704,76 +1704,16 @@ Wire Wire Line
 	5700 6450 5850 6450
 Wire Wire Line
 	5700 6650 5850 6650
-$Comp
-L Device:Jumper_NC_Small J?
-U 1 1 5FB44899
-P 4400 2500
-AR Path="/5EA0A6F6/5FB44899" Ref="J?"  Part="1" 
-AR Path="/5FB44899" Ref="J35"  Part="1" 
-F 0 "J35" H 4410 2600 50  0000 C CNN
-F 1 "J" H 4400 2621 50  0001 C CNN
-F 2 "65C02_Computer:PinHeader_1x02_P2.54mm_Vertical_Close" H 4400 2500 50  0001 C CNN
-F 3 "~" H 4400 2500 50  0001 C CNN
-	1    4400 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper_NO_Small J?
-U 1 1 5FB46024
-P 4400 2650
-AR Path="/5EA0A6F6/5FB46024" Ref="J?"  Part="1" 
-AR Path="/5FB46024" Ref="J36"  Part="1" 
-F 0 "J36" H 4410 2720 50  0000 C CNN
-F 1 "J" H 4400 2744 50  0001 C CNN
-F 2 "65C02_Computer:PinHeader_1x02_P2.54mm_Vertical_Close" H 4400 2650 50  0001 C CNN
-F 3 "~" H 4400 2650 50  0001 C CNN
-	1    4400 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper_NO_Small J?
-U 1 1 5FB6B847
-P 4400 2800
-AR Path="/5EA0A6F6/5FB6B847" Ref="J?"  Part="1" 
-AR Path="/5FB6B847" Ref="J37"  Part="1" 
-F 0 "J37" H 4390 2870 50  0000 C CNN
-F 1 "J" H 4400 2894 50  0001 C CNN
-F 2 "65C02_Computer:PinHeader_1x02_P2.54mm_Vertical_Close" H 4400 2800 50  0001 C CNN
-F 3 "~" H 4400 2800 50  0001 C CNN
-	1    4400 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 2500 4550 2500
-Wire Wire Line
-	4550 2500 4550 2650
-Wire Wire Line
-	4550 2800 4500 2800
-Wire Wire Line
-	4500 2650 4550 2650
-Connection ~ 4550 2650
-Wire Wire Line
-	4550 2650 4550 2800
-Text GLabel 4650 2650 2    50   Output ~ 0
+Text GLabel 4250 2650 0    50   Output ~ 0
 CLK
-Wire Wire Line
-	4550 2650 4650 2650
-Text GLabel 4200 2500 0    50   Input ~ 0
+Text GLabel 4250 2550 0    50   Input ~ 0
 CLKOUT
-Text GLabel 4200 2650 0    50   Input ~ 0
-4Mhz_CLK
 Wire Wire Line
-	4200 2500 4300 2500
+	4250 2550 4350 2550
 Wire Wire Line
-	4300 2650 4200 2650
-Wire Wire Line
-	4200 2800 4300 2800
-Text Notes 4200 2950 0    50   ~ 0
-External CLK
-Text GLabel 4200 2800 0    50   Input ~ 0
+	4350 2650 4250 2650
+Text GLabel 4250 2750 0    50   Input ~ 0
 GND
-Text Notes 4340 3070 0    197  ~ 0
-^
 $Comp
 L Oscillator:ACO-xxxMHz X1
 U 1 1 5E1CCFB4
@@ -2302,6 +2242,19 @@ Wire Wire Line
 Connection ~ 10400 3750
 Wire Wire Line
 	10400 3750 9950 3750
+$Comp
+L Connector:Conn_01x03_Male J35
+U 1 1 5EC51313
+P 4550 2650
+F 0 "J35" H 4522 2674 50  0000 R CNN
+F 1 "CLK Jumper" H 4522 2583 50  0000 R CNN
+F 2 "65C02_Computer:PinHeader_1x03_P2.54mm_Vertical_Close" H 4550 2650 50  0001 C CNN
+F 3 "~" H 4550 2650 50  0001 C CNN
+	1    4550 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2750 4250 2750
 Wire Bus Line
 	3100 5450 3100 5650
 Wire Bus Line

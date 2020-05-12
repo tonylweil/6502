@@ -621,19 +621,6 @@ v2pa6
 Wire Wire Line
 	8300 1850 8300 2000
 Connection ~ 8200 1700
-$Comp
-L Oscillator:ACO-xxxMHz X?
-U 1 1 5FE3E88C
-P 10350 2750
-AR Path="/5F14295C/5FE3E88C" Ref="X?"  Part="1" 
-AR Path="/5EA0A6F6/5FE3E88C" Ref="X3"  Part="1" 
-F 0 "X3" H 10006 2796 50  0000 R CNN
-F 1 "4 MHz" H 10006 2705 50  0000 R CNN
-F 2 "Oscillator:Oscillator_DIP-14" H 10800 2400 50  0001 C CNN
-F 3 "http://www.conwin.com/datasheets/cx/cx030.pdf" H 10250 2750 50  0001 C CNN
-	1    10350 2750
-	-1   0    0    -1  
-$EndComp
 Text GLabel 10850 2350 2    50   Input ~ 0
 +5V
 Text GLabel 10450 3050 2    50   Input ~ 0
@@ -1154,20 +1141,7 @@ Wire Wire Line
 Wire Wire Line
 	8300 1550 7950 1550
 Wire Wire Line
-	9600 2750 10050 2750
-Wire Wire Line
 	9200 2750 9200 3350
-Wire Wire Line
-	9500 2850 9600 2850
-Wire Wire Line
-	9600 2850 9600 2750
-Connection ~ 9600 2750
-Text GLabel 9500 3150 2    50   Output ~ 0
-4Mhz_CLK
-Wire Wire Line
-	9300 2850 9300 3150
-Wire Wire Line
-	9300 3150 9500 3150
 Wire Wire Line
 	2350 6250 2550 6250
 Wire Wire Line
@@ -1250,8 +1224,6 @@ F 3 "~" H 2650 6450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10350 2350 10850 2350
-Wire Wire Line
-	9200 2750 9600 2750
 $Comp
 L Connector_Generic:Conn_01x01 J?
 U 1 1 5ECF0CC3
@@ -1292,16 +1264,20 @@ F 3 "~" H 2650 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NO_Small J92
-U 1 1 5EE6F6E7
-P 9400 2850
-F 0 "J92" H 9400 2750 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 9400 2944 50  0001 C CNN
-F 2 "65C02_Computer:PinHeader_1x02_P2.54mm_Vertical_Close" H 9400 2850 50  0001 C CNN
-F 3 "~" H 9400 2850 50  0001 C CNN
-	1    9400 2850
-	1    0    0    -1  
+L Oscillator:ACO-xxxMHz X?
+U 1 1 5FE3E88C
+P 10350 2750
+AR Path="/5F14295C/5FE3E88C" Ref="X?"  Part="1" 
+AR Path="/5EA0A6F6/5FE3E88C" Ref="X3"  Part="1" 
+F 0 "X3" H 10006 2796 50  0000 R CNN
+F 1 "4 MHz" H 10006 2705 50  0000 R CNN
+F 2 "Oscillator:Oscillator_DIP-14" H 10800 2400 50  0001 C CNN
+F 3 "http://www.conwin.com/datasheets/cx/cx030.pdf" H 10250 2750 50  0001 C CNN
+	1    10350 2750
+	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	9200 2750 10050 2750
 Wire Bus Line
 	6750 1200 6750 1600
 Wire Bus Line
