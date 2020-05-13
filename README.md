@@ -1,4 +1,4 @@
-# DB6502 v002 Tony Weil's Updates  - 5/12/2020
+# DB6502 v002 Tony Weil's Updates  - 5/13/2020
 
 KiCad Schematics, Board files and Gerbers in the Schematics/65C02_Computer directory have been updated to v002. In general, changes were made to add a sound chip and third VIA. Many jumpers were added allowing disconnecting and reconfiguring many signals. You can use jumpers to switch between LCD 4bit and 8bit wiring. See schematic for all changes.
 
