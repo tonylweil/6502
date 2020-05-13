@@ -18,7 +18,9 @@ Jumpers for ROM: /OE, /CE and /WE lines
 
 Jumpers for RAM: /OE and /CE 
 
-Jumper to ground ACIA /CTS line and FT230x /CTS
+Jumpers for VIA1-3 and ACIA, A9-A12 and IOCS Chip Select lines to change hardware addressing
+
+Jumper to ground ACIA /CTS line and FT230x /CTS to support no hardware handshaking
 
 Jumpers added to disconnect any existing connections to VIA1 (LCD and ATTINY) and VIA2 (76489 Sound chip)
 
