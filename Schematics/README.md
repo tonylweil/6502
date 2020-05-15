@@ -21,7 +21,7 @@ Other parts you can't buy from Digikey:
 
 | Reference | Type                   | Value         | Description                        | Vendor                                                                  | Part Number                                                                               |
 | --------- | ---------------------- | ------------- | ---------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |            
-| U5 See Note        | IC  | 65C51N       | ACIA               | WDC   | [W65C51N6TPG–14](http://www.westerndesigncenter.com/wdc/w65c51n-chip.cfm) |
+| U5 See Note        | IC  | 65C51N       | ACIA               | Mouser   | [W65C51N6TPG–14](https://www.mouser.com/ProductDetail/western-design-center-wdc/w65c51n6tpg-14/?qs=AgbsAOSw7WDdUCKSkUixbw%3D%3D&countrycode=US&currencycode=USD) |
 | U5 See Note        | IC  | R6551 S6551       | ACIA              | Jameco   | [6551](https://www.jameco.com/shop/ProductDisplay?catalogId=10001&langId=-1&storeId=10001&productId=43318) |
 | U7        | IC  | 65C02       | CPU               | Jameco   | [W65C02S6TPG-14](https://www.jameco.com/shop/ProductDisplay?productId=2143638) |
 | U11, U12, U13        | IC  | 65C22S       | VIA               | Jameco   | [W65C22S6TPG-14](https://www.jameco.com/shop/ProductDisplay?productId=2143591) |
