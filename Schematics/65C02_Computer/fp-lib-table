@@ -1,5 +1,5 @@
 (fp_lib_table
   (lib (name 65C02_Computer)(type KiCad)(uri ${KIPRJMOD}/65C02_Computer.pretty)(options "")(descr ""))
-  (lib (name Connectors)(type KiCad)(uri ${KIPRJMOD}/Tony-KiCad-Libraries/Footprints/Connectors.pretty)(options "")(descr ""))
-  (lib (name DB6502)(type KiCad)(uri ${KIPRJMOD}/DB6502.pretty)(options "")(descr ""))
+  (lib (name Connectors)(type KiCad)(uri ${KIPRJMOD}/Tony-KiCad-Libraries/Footprints/Connectors.pretty)(options "")(descr "")(disabled))
+  (lib (name DB6502)(type KiCad)(uri ${KIPRJMOD}/DB6502.pretty)(options "")(descr "")(disabled))
 )

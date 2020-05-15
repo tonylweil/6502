@@ -1,14 +1,14 @@
 (export (version D)
   (design
     (source C:\Users\Tony\Dropbox\Kicad\6502\DB6502\65C02_Computer.sch)
-    (date "5/11/2020 1:30:23 PM")
+    (date "5/14/2020 11:21:46 PM")
     (tool "Eeschema (5.1.5)-3")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title "65C02 Hobby Computer")
         (company)
         (rev v002)
-        (date 2020-05-10)
+        (date 2020-05-12)
         (source 65C02_Computer.sch)
         (comment (number 1) (value https://github.com/dbuchwald/6502))
         (comment (number 2) (value https://github.com/tonylweil/6502))
