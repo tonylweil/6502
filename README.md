@@ -1,4 +1,4 @@
-# DB6502 v002 Tony Weil's Updates  - 5/13/2020
+# DB6502 V2 Tony Weil's Updates  - 5/15/2020
 
 KiCad Schematics, Board files and Gerbers in the Schematics/65C02_Computer directory have been updated to v002. In general, changes were made to add a sound chip and third VIA. Many jumpers were added allowing disconnecting and reconfiguring many signals. You can use jumpers to switch between LCD 4bit and 8bit wiring. See schematic for all changes.
 
@@ -37,6 +37,10 @@ Changed USB Micro connector to USB Mini THT. Much easier to solder!
 Delete USB-B
 
 Added more mounting holes near VIAs and Expansion header to help with plugging in cables
+
+# ==============================
+
+# V1 Readme
 
 # DB6502 - Dawid Buchwald's 6502 Computer
 
