@@ -1,3 +1,46 @@
+# V2 Updates 5/15/2020
+
+Address Mapping Table
+
+The key takeway here is that when porting Ben's programs you have to use this "mapping table":
+|Segment|BE6502 |DB6502 v1 |DB6502 v2 |Comment |
+|-------|-------------|-------------|-------------|------------------------------------------------------------------|
+|RAM |0x0000-0x3fff|0x0000-0x7fff|0x0000-0x7fff| |
+|VIA1 | |0x9000 |0x9000 |Connected to keyboard/LCD/blink LED in my build |
+|VIA2 |0x6000 |0x8800 |0x8800|Can be used to run Ben's programs |
+|VIA3 | |N/A| 0x8400 ||
+|ACIA | |0x8400 | 0x8200 ||
+|ROM |0x8000-0xffff|0xa000-0xffff|0xa000-0xffff|**First 8K are not accessible, but need to be burned to the chip**|
+
+# V2 Part Ordering
+You can create a Digikey BOM by going to this link:
+
+https://www.digikey.com/BOM/Create/CreateSharedBom?bomId=8248210
+
+Other parts you can't buy from Digikey:
+
+| Reference | Type                   | Value         | Description                        | Vendor                                                                  | Part Number                                                                               |
+| --------- | ---------------------- | ------------- | ---------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |            
+| U5 See Note        | IC  | 65C51N       | ACIA               | WDC   | [W65C51N6TPG–14](http://www.westerndesigncenter.com/wdc/w65c51n-chip.cfm) |
+| U5 See Note        | IC  | R6551 S6551       | ACIA              | Jameco   | [6551](https://www.jameco.com/shop/ProductDisplay?catalogId=10001&langId=-1&storeId=10001&productId=43318) |
+| U7        | IC  | 65C02       | CPU               | Jameco   | [W65C02S6TPG-14](https://www.jameco.com/shop/ProductDisplay?productId=2143638) |
+| U11, U12, U13        | IC  | 65C22S       | VIA               | Jameco   | [W65C22S6TPG-14](https://www.jameco.com/shop/ProductDisplay?productId=2143591) |
+| U14        | IC  | SN76489AN        | Audio Chip                | Twisty Wrist Arcade  | [SN76489AN](https://www.twistywristarcade.com/sound-processors/1120-sn76489.html)  |
+
+(Copied from v1 notes)
+
+Note: Important note about the ACIA chip: There are basically two types of chips that can be used. 
+1) Modern, rated to higher frequencies WDC65C51 and older, 
+2) Rockwell 6551P chips, rated only for 1MHz. 
+
+The problem with former is that there is a bug with interrupt handling on transmit operation - both IRQ and status flag polling fail, you have to implement dead loop to wait long enough for the byte to be transmitted. Latter chip is probably no longer manufactured, but can be purchased online from Chinese sellers - these are cheap, but not all of them work correctly, so get more than one to be safe. For me the second chip worked correctly and both polling and IRQ-based transmit work as expected.
+
+
+# ====================================
+# V1 Readme
+
+
+
 # 6502 system schematics
 
 This documentation provides all the information regarding my variant of BE6502 computer:
